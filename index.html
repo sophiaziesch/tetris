@@ -1,0 +1,61 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<main>
+			<!-- #game-intro is initially shown on the game start screen -->
+			<div id="game-intro">
+				<div class="header">
+					<h1>
+						Space <br />
+						Tetris
+					</h1>
+
+					<img src="./img/planet.jpeg" alt="blue planet" class="planet-small" />
+				</div>
+				<button id="start-button">Start</button>
+				<p>
+					Use the left and right key to rotate the tetrominos and the down key
+					to move them downward.
+				</p>
+			</div>
+
+			<div id="game-container">
+				<!-- #game-screen is initially hidden using CSS style display: none -->
+				<div id="flex-container">
+					<div id="game-screen"></div>
+					<div id="game-screen-info">
+						<h1>
+							Space <br />
+							Tetris
+						</h1>
+						<img src="./img/planet.jpeg" alt="blue planet" class="planet-big" />
+						<p>Level: <span id="level">1</span></p>
+						<p>Score: <span id="score">0</span></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- #game-end is initially hidden using CSS style display: none -->
+			<div id="game-end">
+				<div class="header">
+					<h1>
+						Space <br />
+						Tetris
+					</h1>
+
+					<img src="./img/planet.jpeg" alt="blue planet" class="planet-small" />
+				</div>
+				<br />
+				<button id="restart-button">Restart</button>
+			</div>
+		</main>
+		<script type="text/javascript" src="./js/pieces.js"></script>
+		<script type="text/javascript" src="./js/game.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>
+	</body>
+</html>
